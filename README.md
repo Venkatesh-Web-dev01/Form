@@ -32,3 +32,22 @@ graph TD
     end
 
 
+
+
+Form/
+│
+├── 📄 .gitignore          # Files and folders ignored by Git
+├── 📄 App.css             # Component-level styling for App component
+├── 📄 App.jsx             # Main React application logic and form component
+├── 📄 eslint.config.js    # ESLint configuration and rules
+├── 📄 favicon.svg         # Site icon displayed in the browser tab
+├── 📄 hero.png            # Visual banner or media asset
+├── 📄 icons.svg           # Scalable vector graphics sprite
+├── 📄 index.css           # Global baseline styles and CSS variables
+├── 📄 index.html          # HTML entry point for Vite
+├── 📄 main.jsx            # Application root entry point (DOM rendering)
+├── 📄 package.json        # Project metadata, dependencies, and scripts
+├── 📄 package-lock.json   # Exact dependency version lockfile
+├── 📄 react.svg           # React logo asset
+├── 📄 vite.config.js      # Configuration file for Vite build tool
+└── 📄 vite.svg            # Vite logo asset
