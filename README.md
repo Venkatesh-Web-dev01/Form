@@ -1,16 +1,34 @@
-# React + Vite
+# 📋 Form — React + Vite Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight, modern web application built with **React 18** and **Vite**. This project provides a fast, responsive form interface featuring Hot Module Replacement (HMR), modular styling, and optimized linting rules.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Tech Stack & Features
 
-## React Compiler
+* **Core Framework:** [React 18](https://react.dev/)
+* **Build Tool:** [Vite](https://vitejs.dev/) (Fast bundling and near-instant HMR)
+* **Styling:** CSS3 (Modern responsive layouts and global design system)
+* **Code Quality:** [ESLint](https://eslint.org/) flat configuration (`eslint.config.js`)
+* **Assets:** Modular SVG icon support and static media management
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🏗️ Project Architecture & Flow
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```mermaid
+graph TD
+    A[index.html] -->|Script Entry| B[src/main.jsx]
+    B -->|Mounts UI with StrictMode| C[src/App.jsx]
+    C -->|Applies Component Styles| D[src/App.css]
+    C -->|Applies Global Styles| E[src/index.css]
+    C -->|Imports Assets| F[Static & Media Assets]
+
+    subgraph Assets Management
+        F --> G[src/icons.svg]
+        F --> H[src/react.svg]
+        F --> I[src/vite.svg]
+        F --> J[src/hero.png]
+    end
+
+
