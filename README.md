@@ -64,6 +64,24 @@ Form/
                                                                   │
                                                                   ▼
                                                       [ Trigger API / Submit ]
+
+                          ┌────────────────────────┐
+                          │   CSS Global Tokens    │
+                          │   (`index.css`)        │
+                          └───────────┬────────────┘
+                                      │
+            ┌─────────────────────────┴─────────────────────────┐
+            ▼                                                   ▼
+┌───────────────────────┐                           ┌───────────────────────┐
+│   Color System & UI   │                           │ Dynamic Layout System │
+│ ───────────────────── │                           │ ───────────────────── │
+│ • Primary:  #3B82F6   │                           │ • Mobile: Grid 1-Col  │
+│ • Surface:  #1E293B   │                           │ • Desktop: Flex 2-Col │
+│ • Error:    #EF4444   │                           │ • Transition: 200ms   │
+│ • Success:  #10B981   │                           │ • Focus Ring: 2px     │
+└───────────────────────┘                           └───────────────────────┘
+
+
 🎨 Design Thinking & UI/UX ApproachThe user interface was built around a human-centered 5-stage Design Thinking framework focused on eliminating form fatigue and submission errors:1. Empathize & DefineProblem: Form fatigue caused by delayed validation, missing contextual errors, and unclear submit states.Core Question: "How might we build a frictionless form experience that guides users smoothly through data entry with immediate, non-intrusive visual feedback?"2. Ideation & Micro-InteractionsFocus States: High-visibility primary focus rings for accessibility and keyboard navigation.Error Isolation: In-line text alerts styled in soft red to capture attention without creating visual clutter.3. Visual Color Palette & Design SystemThe application styling utilizes unified CSS variables to maintain high visual contrast and accessibility:
 / Alert#EF4444--color-errorValidation error borders & message text🚀 Getting StartedPrerequisitesNode.js (v16.0 or higher)npm (bundled with Node.js)Local Setup InstructionsClone the Repository:Bashgit clone [https://github.com/Venkatesh-Web-dev01/Form.git](https://github.com/Venkatesh-Web-dev01/Form.git)
 cd Form
