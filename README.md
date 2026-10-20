@@ -98,3 +98,43 @@ Form/
 ├── 📄 main.jsx            # Application mount & DOM rendering point
 ├── 📄 package.json        # Dependencies, scripts, and project metadata
 └── 📄 vite.config.js      # Vite build setup
+
+## 📐 Dynamic Form Architecture & Conditional Logic
+
+### 1. Dynamic Field Dependency Flow
+
+```text
+               ┌──────────────────────────────┐
+               │     [ Selected Account ]     │
+               └──────────────┬───────────────┘
+                              │
+             ┌────────────────┴────────────────┐
+             ▼                                 ▼
+      ┌─────────────┐                   ┌─────────────┐
+      │ Individual  │                   │  Corporate  │
+      └──────┬──────┘                   └──────┬──────┘
+             │                                 │
+             ▼                                 ▼
+┌─────────────────────────┐       ┌─────────────────────────┐
+│   Show Personal Fields  │       │   Show Company Fields   │
+│ ─────────────────────── │       │ ─────────────────────── │
+│ • Full Name             │       │ • Company Name          │
+│ • Personal Email        │       │ • Tax Identification ID │
+│ • Date of Birth         │       │ • Work Email            │
+└────────────┬────────────┘       └────────────┬────────────┘
+             │                                 │
+             └────────────────┬────────────────┘
+                              │
+                              ▼
+               ┌──────────────────────────────┐
+               │    [ Conditional Toggle ]    │
+               │   "Require Shipping Info?"    │
+               └──────────────┬───────────────┘
+                              │
+                   ┌──────────┴──────────┐
+                YES│                     │NO
+                   ▼                     ▼
+      ┌────────────────────────┐  ┌──────────────┐
+      │  Render Address Fields │  │ Skip Address │
+      │  & Validate Zip Code   │  │ Section      │
+      └────────────────────────┘  └──────────────┘
