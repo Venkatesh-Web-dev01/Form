@@ -48,3 +48,31 @@ cd Form
 Install Dependencies:Bashnpm install
 Start Development Server:Bashnpm run dev
 View in Browser:Open http://localhost:5173 in your web browser.📜 Available ScriptsCommandActionnpm run devStarts local Vite development servernpm run buildBundles and optimizes project for production deploymentnpm run previewLocally previews production buildnpm run lintRuns ESLint to check for syntax and style errors📄 LicenseThis project is open-source and available under the MIT License.
+
+# 📝 Interactive React Form Project
+
+---
+
+## ✨ Key Features
+
+- **⚡ Instant Feedback & HMR:** Powered by Vite for lightning-fast Hot Module Replacement and development.
+- **🛡️ Real-Time Dynamic Validation:** In-line error handling on input blur/change without disrupting user flow.
+- **🎨 Modern Design System:** High-contrast dark theme utilizing CSS variables (`App.css` and `index.css`).
+- **🧩 Component Modularity:** Encapsulated React components built with modern JSX and strict ESLint compliance.
+- **📱 Fully Responsive:** Adaptive Flexbox/Grid layouts optimized across mobile, tablet, and desktop viewports.
+
+---
+
+## 📁 Project Structure
+
+```text
+Form/
+├── 📄 .gitignore          # Git exclusion rules
+├── 📄 App.css             # Component-level layout & component styles
+├── 📄 App.jsx             # Main React application logic & form handling
+├── 📄 eslint.config.js    # Code quality & ESLint configuration
+├── 📄 index.css           # Global CSS variables & foundational styles
+├── 📄 index.html          # HTML entry point
+├── 📄 main.jsx            # Application mount & DOM rendering point
+├── 📄 package.json        # Dependencies, scripts, and project metadata
+└── 📄 vite.config.js      # Vite build setup
