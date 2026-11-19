@@ -1,6 +1,6 @@
 # 📝 Interactive React Form Project
 
-An interactive, modern form application built using **React** and **Vite**. This application features real-time dynamic field validation, state management, a responsive dark-mode aesthetic, and an accessible UI architecture.
+An interactive, modern form application built using **React** and **Vite**. This application features real-time dynamic field validation, state management, a responsive dark-mode aesthetic, and an accessible UI architecture. Actually this is my college project.
 
 ---
 
