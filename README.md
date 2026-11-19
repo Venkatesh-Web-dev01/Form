@@ -2,6 +2,21 @@
 
 An interactive, modern form application built using **React** and **Vite**. This application features real-time dynamic field validation, state management, a responsive dark-mode aesthetic, and an accessible UI architecture. Actually this is my college project.
 
+<div align="center">
+
+  <h1>📝 Interactive React Form Project</h1>
+  <p>An interactive, modern form application built using <strong>React</strong> and <strong>Vite</strong>.</p>
+
+  <!-- Tech Stack Badges -->
+  <p>
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+    <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
+    <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+    <img src="https://img.shields.io/badge/ESLint-4B32C3?style=for-the-badge&logo=eslint&logoColor=white" alt="ESLint" />
+  </p>
+
+</div>
 ---
 
 ## ✨ Key Features
